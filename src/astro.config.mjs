@@ -1,4 +1,4 @@
-import { defineConfig } from 'astro/config';
+import { defineConfig } from 'astro/config.mjs';
 
 import netlify from "@astrojs/netlify/functions";
 
