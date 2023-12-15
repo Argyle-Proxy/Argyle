@@ -1,5 +1,6 @@
 ---
-import Card from '../components/Card.astro';
-import Layout from '../layouts/Layout.astro';
-import ParticleBackground from '../components/ParticleBackground.astro';
+import { particleBg } from '../components/ParticleBackground.astro';
+import { options } from '../components/ParticleBackground.astro';
 ---
+
+<particleBg class="particleBg" options={options} style="width:calc(1920 * 100%);height:calc(1080 * 100%);"></particleBg>

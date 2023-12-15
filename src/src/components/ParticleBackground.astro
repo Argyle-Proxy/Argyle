@@ -2,7 +2,7 @@
 import Particles from 'astro-particles';
 import type { ISourceOptions } from 'tsparticles-engine';
 
-const options: ISourceOptions = {
+export const options: ISourceOptions = {
   "autoPlay": true,
   "background": {
     "color": {
@@ -537,6 +537,8 @@ const options: ISourceOptions = {
     }
   }
 }
----
 
-<Particles class="particles" options={options} style="width: calc(100% * 1920); height: calc(100% * 1080);"></Particles>
+export function particleBg() {
+  return <Particles></Particles>;
+};
+---
