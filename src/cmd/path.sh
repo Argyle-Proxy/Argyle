@@ -10,4 +10,6 @@ else
   echo "Command already executed. Skipping..."
 
   npm run build
+
+  npm run dev
 fi
