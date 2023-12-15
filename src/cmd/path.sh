@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/bin/bash
 
 if [ ! -f ".run-once-marker" ]; then
   echo "Running the command for the first time..."
