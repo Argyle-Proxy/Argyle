@@ -7,6 +7,8 @@ if [ ! -f ".run-once-marker" ]; then
 
   npm install -g astro
 
+  npm install -g @astrojs/check
+
   touch .run-once-marker
 else
   echo "Command already executed. Skipping..."
