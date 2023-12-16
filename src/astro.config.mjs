@@ -6,4 +6,9 @@ import netlify from "@astrojs/netlify/functions";
 export default defineConfig({
   output: "src/pages",
   adapter: netlify(),
+  server: {
+    headers: {
+      'Access-Control-Allow-Origin': '*'
+    }
+  }
 });
