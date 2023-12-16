@@ -5,6 +5,8 @@ if [ ! -f ".run-once-marker" ]; then
 
   export PATH="$PATH:/opt/build/repo/src/node_modules/.bin"
 
+  npm install netlify-cli -g
+
   touch .run-once-marker
 else
   echo "Command already executed. Skipping..."
