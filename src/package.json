@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "build": "npm run build --output src/pages",
+    "build": "astro build --output src/pages",
     "preview": "astro preview",
     "astro": "astro"
   },
