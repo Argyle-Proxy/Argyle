@@ -4,6 +4,6 @@ import netlify from "@astrojs/netlify/functions";
 
 // https://astro.build/config
 export default defineConfig({
-  output: "src/dist",
+  output: "../src",
   adapter: netlify(),
 });
