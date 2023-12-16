@@ -2,9 +2,6 @@
 import Particles from 'astro-particles';
 import type { ISourceOptions } from 'tsparticles-engine';
 
-import { type Container, type Engine, tsParticles } from "tsparticles-engine";
-import { loadFull } from 'tsparticles';
-
 export const options: ISourceOptions = {
   "autoPlay": true,
   "background": {
@@ -540,12 +537,15 @@ export const options: ISourceOptions = {
     }
   }
 }
-
-window.particlesInit = async function(engine: Engine) {
-  await loadFull(engine);
-};
-
-export function particleBg() {
-  return <Particles id="particles" options={options} style="width:calc(1920 * 100%);height:calc(1080 * 100%);" init="particlesInit"></Particles>;
-};
 ---
+
+<script>
+  import { type Container, type Engine, tsParticles } from "tsparticles-engine";
+  import { loadFull } from 'tsparticles';
+
+  window.particlesInit = async function(engine: Engine) {
+    await loadFull(engine);
+  };
+</script>
+
+<Particles id="particles" options={options} style="width:calc(1920 * 100%);height:calc(1080 * 100%);" init="particlesInit"></Particles>
