@@ -10,8 +10,4 @@ if [ ! -f ".run-once-marker" ]; then
   touch .run-once-marker
 else
   echo "Command already executed. Skipping..."
-
-  npm run build
-
-  npm run dev
 fi
