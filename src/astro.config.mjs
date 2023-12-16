@@ -10,8 +10,11 @@ export default defineConfig({
   adapter: netlify(),
   server: {
     headers: {
-      'Access-Control-Allow-Origin': '*'
-    }
+      "Access-Control-Allow-Origin": "*",
+      "/*": {
+        "Content-Type": "text/html"
+      },
+    },
   },
-  integrations: [svelte()]
+  integrations: [svelte()],
 });
