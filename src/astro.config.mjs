@@ -14,6 +14,9 @@ export default defineConfig({
       "/*": {
         "Content-Type": "text/html"
       },
+      "../src/src/pages": {
+        "Content-Type": "text/html"
+      },
     },
   },
   integrations: [svelte()],
