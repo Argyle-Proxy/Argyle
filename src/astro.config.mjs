@@ -14,7 +14,10 @@ export default defineConfig({
       "/*": {
         "Content-Type": "text/html"
       },
-      "../src/src/pages": {
+      "../src/src/pages/*.astro": {
+        "Content-Type": "text/html"
+      },
+      "src/components/*.svelte": {
         "Content-Type": "text/html"
       },
     },
