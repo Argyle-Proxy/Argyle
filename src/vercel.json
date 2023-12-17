@@ -2,7 +2,7 @@
   "cleanUrls": true,
   "headers": [
     {
-      "source": "/index\\.astro",
+      "source": "/index\\.astro$",
       "headers": [
         {
           "key": "Content-Type",
@@ -11,7 +11,7 @@
       ]
     },
     {
-      "source": "/.*\\.astro",
+      "source": "/.*\\.astro$",
       "headers": [
         {
           "key": "Content-Type",
