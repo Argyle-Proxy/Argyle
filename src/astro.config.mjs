@@ -20,6 +20,15 @@ export default defineConfig({
       "src/components/*.svelte": {
         "Content-Type": "text/html"
       },
+      "../components/*.svelte": {
+        "Content-Type": "text/html"
+      },
+      "../components/*.astro": {
+        "Content-Type": "text/html"
+      },
+      "/*.astro": {
+        "Content-Type": "text/html"
+      },
     },
   },
   integrations: [svelte()],
