@@ -1,33 +1,20 @@
 import { defineConfig } from 'astro/config';
-
 import svelte from "@astrojs/svelte";
-
 import netlify from "@astrojs/netlify/functions";
 
-// https://astro.build/config
 export default defineConfig({
   output: "src/pages",
   adapter: netlify(),
   server: {
     headers: {
       "Access-Control-Allow-Origin": "*",
-      "/*": {
-        "Content-Type": "text/html"
+      "Content-Type": "text/html",
+
+      "/src/components/**/*.svelte": {
+        "Content-Type": "text/html",
       },
-      "../src/src/pages/*.astro": {
-        "Content-Type": "text/html"
-      },
-      "src/components/*.svelte": {
-        "Content-Type": "text/html"
-      },
-      "../components/*.svelte": {
-        "Content-Type": "text/html"
-      },
-      "../components/*.astro": {
-        "Content-Type": "text/html"
-      },
-      "/*.astro": {
-        "Content-Type": "text/html"
+      "/src/pages/**/*.astro": {
+        "Content-Type": "text/html",
       },
     },
   },
