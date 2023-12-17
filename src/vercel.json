@@ -1,4 +1,23 @@
 {
-    "cleanUrls": true,
-    "trailingSlash": false
+  "cleanUrl": true,
+  "headers": [
+    {
+      "source": "/index\\.astro",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        }
+      ]
+    },
+    {
+      "source": "/.*\\.astro",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        }
+      ]
+    }
+  ]
 }
